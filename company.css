@@ -1,0 +1,324 @@
+
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #380349, #80088d, #d10caa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.all {
+    display: flex;
+    height: auto;
+    width: 95%;
+    flex-wrap: wrap;
+    
+}
+
+.all img {
+
+    height: auto;
+    max-width: 350px;
+}
+
+.form-all {
+    width: 60%;
+    background-color: #fafafa;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    padding: 20px;
+
+    height: auto;
+
+}
+
+.all-groupe {
+    width: 90%;
+}
+
+.all-groupe label {
+    display: inline-table;
+    width: 75%;
+    margin-top: 15px;
+}
+
+.all-groupe input {
+    display: inline-table;
+    width: 70%;
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.checkbox-container {
+    display: inline-flex;
+    gap: 10px;
+    margin-left: 0px;
+}
+
+.all-groupe .checkbox-container input {
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.all-groupe .checkbox-container label.draf {
+    width: auto;
+    font-size: 14px;
+}
+
+.all-groupe .reduit span a {
+    font-size: 9px;
+    color: #000000;
+    margin-left: 85px;
+    border-bottom: 1px #000000;
+}
+
+.betton {
+    float: right;
+    align-items: center;
+    margin-left: 40px;
+}
+
+button+.submit {
+    font-size: 15px;
+    background-color: #fff;
+    color: #080101;
+    padding: 10px;
+    border: 1px solid rgb(9, 233, 128);
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    height: 45px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.ress {
+    font-size: 15px;
+    background-color: rgb(9, 233, 128);
+    color: #070101;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    height: 45px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.progress-container {
+    display: flex;
+    width: 400px;
+    height: 4px;
+    background-color: #aaa5a5;
+    border-radius: 5px;
+    position: relative;
+}
+
+.all-groupe input.Focus:focus {
+    outline: rgb(214, 3, 3);
+    border: 2.2px solid #fa0808;
+}
+
+.progress-bar {
+    width: 47%;
+    height: 5px;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 5px;
+    font-size: 5px;
+}
+
+.tot {
+    height: 20px;
+}
+
+.progress-container span {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4caf50;
+    position: absolute;
+    top: -8px;
+    margin-left: 47%;
+    color: white;
+    width: 45px;
+    padding: 3px;
+    border-radius: 0px;
+}
+
+@media screen and (max-width: 996px) {
+    .all {
+        flex-direction: row;
+        width: 100%;
+    }
+
+
+    body {
+
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #380349, #80088d, #d10caa);
+        display: flex;
+        height: 190vh;
+    }
+
+    .all {
+        height: auto;
+        width: 100%;
+        flex-wrap: wrap;
+        background-color: #070101;
+    }
+
+    .all img {
+
+        height: auto;
+        min-width: 100%;
+    }
+
+    .form-all {
+        width: 100%;
+        background-color: #fafafa;
+        display: inline-block;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        height: auto;
+
+    }
+
+    .all-groupe {
+        width: auto;
+    }
+
+    .all-groupe label {
+        display: inline-table;
+        width: 75%;
+        margin-top: 14px;
+    }
+
+    .all-groupe input {
+        display: inline-table;
+        width: 70%;
+        height: 40px;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+
+    .checkbox-container {
+        display: inline-flex;
+        gap: 10px;
+        margin-left: 0px;
+    }
+
+    .all-groupe .checkbox-container input {
+        margin-top: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .all-groupe .checkbox-container label.draf {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .all-groupe .reduit span a {
+        font-size: 9px;
+        color: #000000;
+        margin-left: 20px;
+        border-bottom: 1px #000000;
+    }
+
+    .betton {
+        float: right;
+        align-items: center;
+        margin-left: 40px;
+    }
+
+    button+.submit {
+        font-size: 13px;
+        background-color: #fff;
+        color: #080101;
+        padding: 7px;
+        border: 1px solid rgb(9, 233, 128);
+        border-radius: 4px;
+        cursor: pointer;
+        width: 70px;
+        height: 40px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    .ress {
+        font-size: 13px;
+        background-color: rgb(9, 233, 128);
+        color: #070101;
+        padding: 7px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 70px;
+        height: 40px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    .progress-container {
+        display: flex;
+        width: 200px;
+        height: 4px;
+        background-color: #aaa5a5;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .all-groupe input.Focus:focus {
+        outline: rgb(214, 3, 3);
+        border: 2.2px solid #fa0808;
+    }
+
+    .progress-bar {
+        width: 47%;
+        height: 5px;
+        background-color: #4caf50;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        border-radius: 5px;
+        font-size: 5px;
+    }
+
+    .tot {
+        height: 20px;
+    }
+
+    .progress-container span {
+        font-size: 12px;
+        font-weight: bold;
+        background-color: #4caf50;
+        position: absolute;
+        top: -8px;
+        margin-left: 43%;
+        color: white;
+        width: 43px;
+        padding: 2px;
+        border-radius: 0px;
+    }
+
+}
